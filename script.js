@@ -1,4 +1,3 @@
-// Fungsi Fibonacci menggunakan rekursi
 function fibonacci(n) {
     if (n <= 1) {
         return n;
@@ -7,7 +6,6 @@ function fibonacci(n) {
     }
 }
 
-// Fungsi untuk menghitung dan menampilkan deret Fibonacci menggunakan kelas
 class Fibonacci {
     constructor(n) {
         this.n = n;
@@ -44,10 +42,8 @@ function hitungFibonacci() {
     if (isNaN(n)) {
         resultElement.innerText = "Masukkan angka yang valid.";
     } else {
-        // Menggunakan fungsi rekursi fibonacci untuk perbandingan
         const recursiveResult = fibonacci(n);
         
-        // Menggunakan kelas Fibonacci untuk perhitungan deret
         const fibonacciInstance = new Fibonacci(n);
         const iterativeResult = fibonacciInstance.output();
 
